@@ -1,0 +1,156 @@
+body {
+    background: radial-gradient(circle, #0A0A2A, #2A0A3A, #0A2A3A);
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+#intro {
+    text-align: center; /* Center-aligns text inside the element */
+}
+
+.major {
+    display: inline-block; /* Ensures the element respects text-align: center */
+    margin: 0 auto; /* Center-aligns the element if it has a width */
+}
+
+
+
+h1, p, button {
+    color: #FFFFFF;
+}
+
+button {
+    background-color: #37006E;
+    border: 1px solid #C684FF;
+}
+
+#name-typing {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 10px;
+    height: 24px;
+    margin-left: 5px;
+    background-color: #FFFFFF;
+    animation: cursor 1s step-end infinite;
+}
+
+@keyframes cursor {
+    50% {
+        background-color: transparent;
+    }
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#typing-text {
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em 0;
+    padding: 2em 0;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.testimonial {
+    background: #333;
+    padding: 1.5em;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 1em;
+    color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial h4 {
+    margin: 1em 0 0.5em;
+}
+
+.testimonial h5 {
+    margin: 0;
+    font-weight: normal;
+    color: #C684FF;
+}
+
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #222;
+    color: #FFFFFF;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-icons .icons {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons .icons li {
+    margin: 0 0.5em;
+}
+
+.footer-icons .icons li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.footer-icons .icons li a:hover {
+    color: #C684FF;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em; /* Adjust gap between image and text as needed */
+    flex-wrap: wrap; /* Allows wrapping if there's not enough space */
+    text-align: center; /* Center-aligns the content within the intro-content container */
+}
+
+.intro-photo {
+    border-radius: 50%;
+    width: 190px; /* Adjust size as needed */
+    height: 190px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for better visual effect */
+}
+
+.intro-text {
+    max-width: 400px; /* Adjust as needed for text width */
+    text-align: left;
+}
